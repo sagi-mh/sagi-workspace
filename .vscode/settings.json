@@ -1,0 +1,8 @@
+{
+	"editor.tabCompletion": "on",
+	"editor.snippetSuggestions": "top",
+	"cSpell.enabledFileTypes": {
+		"markdown": true
+	}
+}
+

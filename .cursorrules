@@ -1,0 +1,6 @@
+### Filename Rules
+- Use lowercase, kebab-case (dash-separated) for all files and directories.
+- Disallow spaces, underscores, and mixed-case names.
+- Preserve file extensions on rename.
+- Default to kebab-case for all AI-created files.
+- **Exception:** Keep special files like `README.md`, `LICENSE`, `CHANGELOG.md`, and `CONTRIBUTING.md` uppercase.
