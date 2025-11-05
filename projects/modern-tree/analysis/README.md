@@ -1,0 +1,11 @@
+Looker refs:
+1. Drill-down into service view: what external services PHP is connecting to? Both databases and microservices, etc: https://myheritage.looker.com/explore/web_analytics/php_request_end_logs_with_inst?qid=OkobA9ODzSUeHjd36rfZ18&origin_space=154&toggle=fil
+
+2. All fingerprinrs for site DB: https://myheritage.looker.com/explore/web_analytics/php_request_end_logs_with_inst?qid=tTh6ga2B6Md3QIDTfVgB5C&origin_space=154&toggle=dat,fil,vis
+
+3. Drill-down into specific site DB query, by fingerprint: https://myheritage.looker.com/explore/web_analytics/php_request_end_logs_with_inst?qid=fzavPspaXuNKceOKmDkCIa&origin_space=154&toggle=fil
+
+From [AWS Cost Explorer](https://us-east-1.console.aws.amazon.com/costmanagement/home?region=us-east-1#/cost-explorer?chartStyle=STACK&costAggregate=amortizedCost&endDate=2025-08-31&excludeForecasting=true&filter=%5B%7B%22dimension%22:%7B%22id%22:%22LinkedAccount%22,%22displayValue%22:%22Linked%20account%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22335353231268%22,%22displayValue%22:%22app-myhrtg-net%20(335353231268)%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22Service%22,%22displayValue%22:%22Service%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22Amazon%20Relational%20Database%20Service%22,%22displayValue%22:%22Relational%20Database%20Service%20(RDS)%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22TagKey%22,%22displayValue%22:%22Tag%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22sites%22,%22displayValue%22:%22sites%22%7D%5D,%22growableValue%22:%7B%22value%22:%22mh:workload_detail%22,%22displayValue%22:%22mh:workload_detail%22%7D%7D%5D&futureRelativeRange=CUSTOM&granularity=Monthly&groupBy=%5B%22UsageType%22%5D&historicalRelativeRange=LAST_3_MONTHS&isDefault=true&reportMode=STANDARD&reportName=New%20cost%20and%20usage%20report&showOnlyUncategorized=false&showOnlyUntagged=false&startDate=2025-06-01&usageAggregate=undefined&useNormalizedUnits=false) it seems like the Aurora Site DB cost is about $60k/month. Compute costs are about $24k/month (probably after commitment discounts), and storage costs are about $22k/month, and backup costs are about $14k/month (why is backup cost so high?).
+
+
+

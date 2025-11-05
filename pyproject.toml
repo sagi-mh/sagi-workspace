@@ -1,0 +1,19 @@
+[project]
+name = "workspace"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Sagi Bashari",email = "sagi@myheritage.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "jupyter (>=1.1.1,<2.0.0)",
+    "pandas (>=2.3.2,<3.0.0)",
+    "matplotlib (>=3.8,<3.10)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
